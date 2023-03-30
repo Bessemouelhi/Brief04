@@ -6,22 +6,18 @@ const container = document.getElementById('container');
 const btnLeft = document.getElementById('d');
 const btnRight = document.getElementById('g');
 
-afficherBtns();
-
-for (let index = 0; index < nb_image; index++) {
-    
-}
 
 btnLeft.onclick = function() {
     if(position > -nb_image+1) {
         console.log('btnLeft');
         console.log('position : ', position);
         position--;
+    } else {
+        position=0;
     }
     
     container.style.transform = "translate(" + position*200 + "px)";
     container.style.transition = "all 00.5s ease";
-    afficherBtns();
 }
 
 btnRight.onclick = function() {
@@ -29,25 +25,13 @@ btnRight.onclick = function() {
         console.log('btnRight');
         console.log('position : ', position);
         position++;
+    } else {
+        position = -nb_image+1
     }
     
     container.style.transform = "translate(" + position*200 + "px)";
     container.style.transition = "all 00.5s ease";
-    afficherBtns();
 }
-
-function afficherBtns() {
-    if(position == -nb_image+1)
-        btnLeft.style.visibility = "hidden";
-    else
-        btnLeft.style.visibility = "visible";
-
-    if(position == 0)
-        btnRight.style.visibility = "hidden";
-    else
-        btnRight.style.visibility = "visible";
-}
-
 
 /***************************************POPUP********************************************** */
 

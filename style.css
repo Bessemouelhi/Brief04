@@ -270,6 +270,22 @@ footer p{
 }
 
 @media screen and (max-width: 620px) {
+    nav{
+        position: fixed;
+        z-index: 1;
+        justify-content: center;
+        top:0;
+    }
+    .reservasion{
+        margin-top: 100px;
+    }
+    .reservasion .form {
+        width: auto;
+    }
+    .reservasion input{
+        min-width:0px;
+        width: 100%;
+    }
     #carrousel {
         margin: auto;
     }

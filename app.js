@@ -1,4 +1,4 @@
-/***************************************CARROUSEL********************************************** */
+/*************************************** CARROUSEL ***********************************************/
 //initialisation et affectation des variables et des constantes
 let nb_image = 8;
 let position = 0;
@@ -35,13 +35,13 @@ btnRight.onclick = function() {
     container.style.transition = "all 00.5s ease";
 }
 
-/***************************************POPUP********************************************** */
+/*************************************** POPUP ***********************************************/
 
 // selection des boutons du carrousel
 const btnPopup = document.querySelectorAll('#container button');
 console.log(btnPopup);// affiche un tableau de boutons dans la console
 
-//initialisation et affectation des variables, creation des elements html
+//initialisation et affectation des constantes, creation des elements html
 const popup = document.createElement("div");
 const popupContent = document.createElement("div");
 const row = document.createElement("div");
@@ -60,7 +60,7 @@ colText.setAttribute('id', 'col-text');
 img.src = 'img/img1.jpg';
 img.setAttribute('id', 'img-popup');
 titre.innerText = 'Lorem ipsum dolor';
-par.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore eveniet non pariatur consectetur exercitationem labore molestias sint nisi quos. Ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore eveniet non pariatur consectetur exercitationem labore molestias sint nisi quos.';
+par.innerText = 'Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quibusdam excepturi quisquam quos ratione perferendis cumque obcaecati laboriosam dolorem pariatur reiciendis ad, animi at eaque vero similique a deleniti quod aliquid maxime quasi? Quasi dolorum sed, mollitia error sunt soluta.';
 btnClose.innerHTML = "&times;";
 btnClose.setAttribute('id', 'close');
 

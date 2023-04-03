@@ -284,7 +284,6 @@ footer p{
         width: auto;
     }
     .reservasion input{
-        min-width:0px;
         width: 100%;
     }
     #carrousel {
@@ -307,6 +306,9 @@ footer p{
     #col-text{
         margin-left: 0px;
         margin-top: 10px;
+    }
+    .headCard h3, .headCard h4{
+        text-align: center;
     }
 }
 
